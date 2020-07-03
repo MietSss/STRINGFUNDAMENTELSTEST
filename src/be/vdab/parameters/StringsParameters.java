@@ -17,21 +17,37 @@ public class StringsParameters {
     }
 
     //method to check if word is a palindrome
-    public static boolean isPalindrome(String string) {
+    public static void isPalindrome(String string) {
         StringBuilder builder = new StringBuilder(string.toLowerCase());          // string omdraaien met Stringbuilder
         builder.reverse();
         String omgekeerdestring = builder.toString();
 
         if (string.toLowerCase().equals(omgekeerdestring)) {                        //strings vergelijken
-            return true;
+            System.out.printf("String %s is a palindrome %n", string);
         } else {
-            return false;
+            System.out.printf("String %s is NOT  a palindrome %n", string);
         }
     }
 
-    public static boolean isPhrasePalindrome(String string) {
-    return true;
+    public static void isPhrasePalindrome(String string) {
+            StringBuilder builder2 = new StringBuilder(string.toLowerCase());           //remove quotes from the string
+            builder2.setCharAt(0, ' ');
+            builder2.setCharAt(string.length()-1, ' ');
+            builder2.trimToSize();
+
+            builder2.reverse();
+
+            String omgekeerdestring = builder2.toString();
+
+            if (string.toLowerCase().equals(omgekeerdestring.toLowerCase())) {                        //strings vergelijken
+                System.out.printf("String %s is a palindrome %n", string);
+            } else {
+                System.out.printf("String %s is NOT  a palindrome %n", string);
+            }
     }
+
+
+
 
     public static boolean isURL(String string) {
     return true;

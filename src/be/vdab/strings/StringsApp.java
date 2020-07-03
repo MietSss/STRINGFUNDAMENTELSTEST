@@ -11,26 +11,20 @@ public class StringsApp {
 
         //counting the vowels of the strings
 
-        stringsParameters.countVowels(een);
-        stringsParameters.countVowels(twee);
-        stringsParameters.countVowels(drie);
+        StringsParameters.countVowels(een);
+        StringsParameters.countVowels(twee);
+        StringsParameters.countVowels(drie);
 
 
         // to check if a string(Lepel) is a palindrome
 
-        if (StringsParameters.isPalindrome(een)) {
-            System.out.printf("String %s is a palindrome %n", een);
-        }
-        else{
-            System.out.printf("String %s is NOT a palindrome %n", een);
-        }
+        StringsParameters.isPalindrome(een);
+        StringsParameters.isPalindrome(twee);
 
-        if (StringsParameters.isPalindrome(drie)){
-            System.out.printf("String %s is a palindrome %n", drie);
-        }
-        else{
-            System.out.printf("String %s is NOT a palindrome %n", drie);
-        }
+
+        // to check if the phrase is a palindrome
+
+        StringsParameters.isPhrasePalindrome(drie);
 
 
     }
