@@ -47,14 +47,15 @@ public class StringsParameters {
     }
 
 
-
-
     public static boolean isURL(String string) {
-    return true;
+            if(string.startsWith("http:/")){
+                return true;
+        }
+            else{
+                return false;
+            }
+
     }
 
-    public static int isVowel(String string) {
-    return 1;
-    }
 
 }

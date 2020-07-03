@@ -26,6 +26,12 @@ public class StringsApp {
 
         StringsParameters.isPhrasePalindrome(drie);
 
+        // to check if its a URL
+
+        System.out.printf("%s is %s URL %n", een, StringsParameters.isURL(een)? "een": "geen");
+        System.out.printf("%s is %s URL %n", twee, StringsParameters.isURL(twee)? "een": "geen");
+        System.out.printf("%s is %s URL %n", drie, StringsParameters.isURL(drie)? "een": "geen");
+
 
     }
 }
